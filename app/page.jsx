@@ -23,11 +23,11 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex-1 overflow-y-auto p-5">
+      <main className="flex-1 overflow-y-auto p-5 dark:bg-black">
         <CreateForm getUserInput={getUserInput} />
         <ReportTable allOutputs={allOutputs} />
       </main>
-      <div className="py-5 bg-gray-700 text-center text-white ">
+      <div className="py-5 bg-blue-600  dark:bg-blue-800 text-center text-white ">
         <p className="ml-6 float-left">
           {Locations.length>0 ? `${Locations.length} Locations world wide`:'0 Location world wide'}
         </p>
