@@ -45,12 +45,12 @@ export default function Header() {
           </ul>
 
           <button
-            class="w-20 h-10 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow ml-6"
+            className="w-20 h-10 rounded-full bg-white flex items-center transition duration-300 focus:outline-none shadow ml-6"
             onClick={toggleThemeHandler}
           >
             <div
               id="switch-toggle"
-              class="w-10 h-10 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white"
+              className="w-10 h-10 relative rounded-full transition duration-500 transform bg-yellow-500 -translate-x-2 p-1 text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

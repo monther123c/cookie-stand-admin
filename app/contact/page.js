@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About(){
     return (
-        <div className="w-screen h-screen flex justify-center place-items-center">
-            <span className="text-9xl">C</span> <p className="text-4xl">ontact us on: 49034934</p>
+        <div className="w-screen h-screen flex justify-center place-items-center dark:bg-black">
+            <span className="text-9xl dark:text-white">C</span> <p className="text-4xl dark:text-white">ontact us on: +96252558 </p>
             <br/>
         </div>
     )

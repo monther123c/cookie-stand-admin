@@ -112,6 +112,6 @@ export default function CreateForm(props) {
           </div>
         </form>
       </section>
-      </div>
+    </div>
   );
 }
