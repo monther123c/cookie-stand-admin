@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ThemeWrapper from "./contexts/theme";
+import AuthWrapper from "./contexts/auth";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -11,13 +12,15 @@ export default function RootLayout({ children }) {
         head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <ThemeWrapper>
-        <body class="bg-blue-400 font-sans leading-normal tracking-normal ">
-          <Header />
-          {children}
-          <Footer />
-        </body>
-      </ThemeWrapper>
+      <AuthWrapper>
+        <ThemeWrapper>
+          <body className=" bg-blue-400 font-sans leading-normal tracking-normal dark:bg-black">
+            <Header />
+            {children}
+            <Footer />
+          </body>
+        </ThemeWrapper>
+      </AuthWrapper>
     </html>
   );
 }
